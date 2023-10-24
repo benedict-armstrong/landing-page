@@ -2,7 +2,7 @@ FROM node:slim
 
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm i --no-optional
+RUN npm i --omit=optional
 
 COPY . .
 
