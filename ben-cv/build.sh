@@ -1,2 +1,2 @@
-docker build . --platform linux/amd64 -t benarmstrong/benarmstro.ng:cv
-docker push benarmstrong/benarmstro.ng:cv
+docker build . --platform linux/amd64 -t benarmstrong/cv
+docker push benarmstrong/cv

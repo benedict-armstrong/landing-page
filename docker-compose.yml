@@ -11,6 +11,9 @@ services:
   landing-page:
     container_name: landing-page
     image: benarmstrong/landing-page:latest
+    build:
+        context: ./landing-page
+        dockerfile: Dockerfile
     restart: always
     ports:
       - 8005:3030

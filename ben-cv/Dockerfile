@@ -2,5 +2,6 @@ FROM alexac/alpine-lighttpd
 COPY ./html/ /var/www/localhost/htdocs
 COPY ./lighttpd.conf /etc/lighttpd/lighttpd.conf
 RUN chmod 777 /var/www/localhost/htdocs/CV-de.pdf
+RUN chmod 777 /var/www/localhost/htdocs/CV-en.pdf
 RUN chmod 777 /var/www/localhost/htdocs/healthcheck.html
 EXPOSE 80

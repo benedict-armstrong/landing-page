@@ -1,4 +1,4 @@
-FROM node:14.17-alpine
+FROM node:slim
 
 WORKDIR /app
 COPY package.json package-lock.json ./
@@ -8,7 +8,7 @@ COPY . .
 
 RUN npm run build
 
-FROM node:14.17-slim
+FROM node:slim
 
 WORKDIR /app
 COPY --from=0 /app/build ./build
