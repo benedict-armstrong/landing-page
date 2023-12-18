@@ -110,13 +110,15 @@
   }
 
   = Languages and Technologies
-  #[
-    #let languages = configuration.skills.languages.join(", ")
-    #let technologies = configuration.skills.technologies.join(", ")
-    
+  #{
+
+    let languages = configuration.skills.languages.join(", ")
+    let technologies = configuration.skills.technologies.join(", ")
+    [
     - #languages
     - #technologies
-  ]
+    ]
+  }
 ]}
 
 #{
