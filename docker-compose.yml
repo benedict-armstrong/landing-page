@@ -1,13 +1,4 @@
-version: '2'
 services:
-  cv:
-    container_name: cv
-    image: benarmstrong/benarmstro.ng:cv
-    restart: always
-    ports:
-      - 8003:80
-    volumes:
-      - ./cv:/var/www/localhost/htdocs
   landing-page:
     container_name: landing-page
     image: benarmstrong/landing-page:latest
