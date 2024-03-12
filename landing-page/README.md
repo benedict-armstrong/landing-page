@@ -19,6 +19,12 @@ Create a production version:
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+## Deploying
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Build docker image
+
+```bash
+docker build --platform linux/amd64 -t docker.benarmstro.ng/landing-page --push .
+```
+
+Then connect to ben-docker-1 and pull latest image
